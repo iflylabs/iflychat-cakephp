@@ -1,0 +1,36 @@
+Installation Steps:-
+
+1. Extract and copy the Iflychat folder in the app/Plugin director
+2. Add following line of code in app/Config/bootstrap.php.
+
+    CakePlugin::load('Iflychat');
+
+3. change your current directory to app folder and run the following command to create tables in the database.
+
+    ./Console/cake schema create --plugin Iflychat
+
+4. Now open url_to_root_directory/iflychat/iflychat_settings in the url.
+5. Fill all the details for controlling the behavior of the application.
+6. For integrating users in the application open app/Plugin/Iflychat/Controller/IflychatAppController.php in a text editor and edit the get_user_details() method to return the user details of the currently logged in user through database or session as mentioned in the file.
+7. Create your Controller class and add following lines of code to it.
+
+    public $components = array('Iflychat.IflychatSettingsController');
+    public function name_of_action(){
+	//body
+    }
+
+8. Open the view file and write the following code
+
+    <?php
+	$iflychat_html_code = $this->requestAction(
+	    array(
+		'plugin' => 'iflychat',
+		'controller' => 'iflychat_settings',
+		'action' => 'iflychat_get_html_code',
+		urlencode($this->Html->url(null,true))
+	    )
+	);
+	echo $iflychat_html_code;
+    ?>
+
+9. Now open the view page in your browser and see the chat working.

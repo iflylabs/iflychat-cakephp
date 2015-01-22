@@ -1,0 +1,636 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2014-06-25 10:56+0530\n"
+"PO-Revision-Date: 2014-07-24 12:47+0530\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: Controller/IflychatSettingsController.php:262
+msgid "Go Online"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:263
+msgid "Go Idle"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:264
+msgid "New chat message!"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:307
+msgid "iflychat_user is currently offline."
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:308
+msgid "iflychat_user is typing..."
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:309
+msgid "Close"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:310
+msgid "Minimize"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:311
+msgid "Click to Mute"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:312
+msgid "Click to Unmute"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:313
+msgid "Available"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:314
+msgid "Idle"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:315
+msgid "Busy"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:316
+msgid "Offline"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:317
+msgid "Load More Messages"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:318
+msgid "No More Messages"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:319
+msgid "Clear all messages"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:320
+msgid "Type and Press Enter"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:321
+msgid "Type here to search"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:325
+msgid "Ban"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:326
+msgid "Ban IP"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:327
+msgid "Kick"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:328
+msgid "Banned Users"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:329
+msgid "No users have been banned currently."
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:330
+msgid "Loading banned user list..."
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:331
+msgid "Manage Rooms"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:332
+msgid "Unban"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:333
+msgid "Unban IP"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:513
+msgid "Settings saved"
+msgstr ""
+
+#: Controller/IflychatSettingsController.php:555
+msgid "Please correct errors before proceeding"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:9
+msgid "Iflychat General Settings"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:23
+msgid "iFlyChat API Key"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:32
+msgid "Select which chat software to use"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:33
+msgid "Community Chat"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:33
+msgid "Support Chat"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:38
+msgid "Allow only logged-in users to access chat"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:39;51;57;63;69
+msgid "no"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:39;51;57;63;69
+msgid "yes"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:44
+msgid "Theme"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:45
+msgid "light"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:45
+msgid "dark"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:50
+msgid "Notification Sound"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:56
+msgid "User Pictures"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:62
+msgid "Enable Smileys"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:68
+msgid "Log chat messages"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:74
+msgid "Prefix to be used with anonymous users"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:79
+msgid "Use random name or number for anonymous user"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:80
+msgid "Name"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:80
+msgid "Number"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:85
+msgid "Allow anonymous user to set his/her name"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:86;92;104;137;156;257;336;343
+msgid "Yes"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:86;92;104;137;156;257;336;343
+msgid "No"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:91
+msgid "Load chat asynchronously"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:97
+msgid "Chat Moderation"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:108
+msgid "Stop Words (separated by comma)"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:115
+msgid "Use Stop Words to filter chat"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:116
+msgid "Do not filter"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:116
+msgid "Filter in public chatroom"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:116
+msgid "Filter in private chats"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:116
+msgid "Filter in all rooms"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:122
+msgid "Allow/Block hyperlinks"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:123
+msgid "Do not block"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:123
+msgid "Block in public chatroom"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:123
+msgid "Block in private chats"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:123
+msgid "Block in all rooms"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:129
+msgid "Apply above defined block hyperlinks settings only to anonymous users"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:130
+msgid "Yes, apply only to anonymous users"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:130
+msgid "No, apply to all users"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:136
+msgid "Render image and video hyperlinks inline"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:143
+msgid "Allow users to delete messages selectively when in private conversation"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:144;150
+msgid "Allow all users"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:144;150
+msgid "Allow only moderators"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:144;150
+msgid "Disable"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:149
+msgid "Allow users to clear all messages in a room"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:155
+msgid "Allow users to set color of their name in a room"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:161
+msgid "Iflychat Visibility"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:170
+msgid "All pages except those listed"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:170
+msgid "Only the listed pages"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:177
+msgid "Pages"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:184
+msgid "Theme Customization"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:189
+msgid "Chat Top Bar Color"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:195
+msgid "Chat Top Bar Text Color"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:201
+msgid "Chat Font Color"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:207
+msgid "Public Chatroom Header"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:213
+msgid "Chat List Header"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:219
+msgid "Support Chat Customization"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:225
+msgid "Support Chat - Start Button Label"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:233
+msgid "Support Chat Box Header"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:241
+msgid "Support Team/Company Name"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:249
+msgid "Support Tagline Label"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:265
+msgid "Support Chat - Auto Greeting Message"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:273
+msgid ""
+"The delay, in seconds, after which the first time visitors will be shown "
+"auto greeting message."
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:281
+msgid "Support Chat - Leave Message Button Label"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:289
+msgid "Support Chat - Off-line Message Description"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:297
+msgid "Support Chat - Offline Message Label"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:305
+msgid "Support Chat - Offline Contact Details Label"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:313
+msgid "Support Chat - Offline Send Button Label"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:321
+msgid "Support Chat - Email(s) to which mail offline messages should be sent"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:329
+msgid "Iflychat User Online List Control"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:335
+msgid "Minimize online user list by default."
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:342
+msgid "Show search bar in online user list."
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:350
+msgid "All users"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:356
+msgid "User Relationships Role Names to integrate with."
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:369
+msgid ""
+"'Please enter the API key by registering at <a href=\"https://iflychat.com"
+"\">iFlyChat.com.</a>'"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:370
+msgid ""
+"\"Community chat is suitable for forums, blogs and social networking "
+"websites where you would like to users to be able to chat with each other "
+"both in rooms and one-to-one. Whereas Support chat is suitable for sites "
+"which need to attend to queries of their visitors. Please select which one "
+"to use. In Community chat, users with administer_Iflychat permission are "
+"considered as chat moderators/administrators. And, in Support chat, users "
+"with administer_Iflychat permission are considered as support staff.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:371
+msgid "\"Chat will be displayed only when <em>user</em> is logged in.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:372
+msgid ""
+"\"All themes from inside the <em>themes</em> folder will be displayed here.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:373
+msgid ""
+"\"Select whether to play notification sound when a new message is received.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:374
+msgid "\"Select whether to show user pictures in chat.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:375
+msgid "\"Select whether to show smileys.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:376
+msgid ""
+"\"Select whether to log chat messages, which can be later viewed in message "
+"inbox.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:377
+msgid ""
+"\"Please specify the prefix to be used with anonymous users. It shouldn't be "
+"long. Ideally it should be between 4 to 7 characters.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:378
+msgid ""
+"\"Select whether to use random generated name or number to assign to a new "
+"anonymous user.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:379
+msgid ""
+"'Select whether to allow anonymous user to be able to change his/her name.'"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:380
+msgid "\"Select whether to load chat asynchronously or not.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:381
+msgid "\"Enable Public Chatroom\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:382
+msgid "'Select whether to use stop words(entered above) for filtering'"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:383
+msgid "\"Select whether to allow/block hyperlinks posted in chats\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:384
+msgid ""
+"\"Select whether to apply above defined block hyperlinks setting only to "
+"anonymous users.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:385
+msgid "'Select whether to render image and video hyperlinks inline in chat.'"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:386
+msgid ""
+"'Select whether to apply above defined block hyperlinks setting only to "
+"anonymous users.'"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:387
+msgid "\"Select whether to allow users to clear all messages in a room.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:388
+msgid "\"Select whether to allow users to set color of their name in a room.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:389
+msgid "\"Show Iflychat on specific pages\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:390
+msgid ""
+"\"Specify pages by using their paths. Enter one path per line. The '*' "
+"character is a wildcard. Example paths are blog for the blog page and blog/* "
+"for every personal blog. < front > is the front page.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:391
+msgid "'Choose the color of the top bar in the chat.'"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:392
+msgid "'Choose the color of the text in top bar in the chat.'"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:393
+msgid "\"Choose the color of the text in the chat.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:394
+msgid "'This is the text that will appear in header of public chatroom.'"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:395
+msgid "\"This is the text that will appear in header of chat list.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:396
+msgid ""
+"\"The label for <i>Start Chat</i> button, which when clicked upon will "
+"launch chat.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:397
+msgid "\"This is the text that will appear as header of chat box.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:398
+msgid "'Your team/company tagline.'"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:400
+msgid ""
+"\"This is the text of an auto greeting message which will be displayed to "
+"visitors.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:401
+msgid ""
+"'The delay, in seconds, after which the first time visitors will be shown "
+"auto greeting message.'"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:402
+msgid ""
+"\"The label for <i>Leave Message</i> button, which when clicked upon will "
+"offline form.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:403
+msgid "\"This is the description shown in Support Chat Offline window.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:404
+msgid ""
+"\"This is the label for the <i>Message</i> textarea in Support Chat Offline "
+"window.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:405
+msgid ""
+"\"This is the label for the <i>Contact Details</i> textarea in Support Chat "
+"Offline window.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:406
+msgid ""
+"\"This is the label for the <i>Send Button</i> textarea in Support Chat "
+"Offline window.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:407
+msgid ""
+"\"Enter all email ids (separated by comma) to which notification should be "
+"sent when a user leaves a message via Offline Form.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:408
+msgid "'Select whether to minimize online user list in chat by default.'"
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:409
+msgid "\"Select whether to show search bar in online user list.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:411
+msgid "\"This determines the method for creating the chat buddylist.\""
+msgstr ""
+
+#: View/IflychatSettings/index.ctp:412
+msgid ""
+"\"The singular form of User Relationships Role Names (e.g. buddy, friend, "
+"coworker, spouse) separated by comma.\""
+msgstr ""
