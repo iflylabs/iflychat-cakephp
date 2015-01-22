@@ -582,7 +582,8 @@
 	    $this->iflychat_user_details = array_merge($this->iflychat_default_user_details, (array)$this->get_user_details());
 	    $json = (array)$this->iflychat_get_auth();
 	    $json = array_merge($this->iflychat_user_details, $json);
-	    echo json_encode($json);
+        header('Content-type: application/json');
+        print json_encode($json);
 	}
 
 	/**
