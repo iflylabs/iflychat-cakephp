@@ -1,7 +1,7 @@
 <?php
     /**
     *
-    * @author=>Iflychat-Saheb
+    * @author=>iFlyChatDev Team
     * App Controller for the plugin.
     *
     */

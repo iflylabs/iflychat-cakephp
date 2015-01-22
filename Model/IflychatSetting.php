@@ -1,7 +1,7 @@
 <?php
     /**
     *
-    * @author => iflychat-rohit
+    * @author => iFlyChatDev Team
     * Model for the iflychat settings.
     * Handles data Population in iflychat_settings table
     *

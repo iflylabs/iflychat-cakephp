@@ -2,7 +2,7 @@
 
     /**
     *
-    * @author Iflychat-Saheb
+    * @author iFlyChatDev Team
     * Controller for the iflychat settings.
     * Handles all the request to iflychat plugin.
     * Populates data in iflychat_settings table and handles auth request.
