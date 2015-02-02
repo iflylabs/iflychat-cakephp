@@ -282,8 +282,7 @@
 
 		);
 		if($this->iflychat_user_details['is_admin']) {
-		    $roleNames = $this->iflychat_settings['Iflychat_ur_name'];
-	  	    $iflychat_settings['arole'] = explode(',', $roleNames);
+            $iflychat_settings['arole'] = $this->iflychat_user_details['all_user_roles'];
 		}
 		if($this->iflychat_settings['Iflychat_user_picture'] == '1') {
 		    $iflychat_settings['up'] = $this->iflychat_get_user_pic_url();
@@ -418,12 +417,21 @@
 		'isLog' => TRUE,
 		'whichTheme' => 'blue',
 		'enableStatus' => TRUE,
-		'role' => $this->iflychat_user_details['is_admin']?'admin':'normal',
 		'validState' => array('available','offline','busy','idle'),
 		'up' => $this->iflychat_get_user_pic_url(),
 		'upl' => $this->iflychat_get_user_profile_url()
 	    );
 
+        if($this->iflychat_user_details['is_admin']) {
+            $data['role'] = "admin";
+            $data['allRoles'] = $this->iflychat_user_details['all_user_roles'];
+        }
+        else {
+            $data['role'] = array();
+            foreach ($this->iflychat_user_details['user_roles'] as $rkey => $rvalue) {
+                $data['role'][$rkey] = $rvalue;
+            }
+        }
         if($this->iflychat_user_details['relationship_set']) {
             $data['rel'] = '1';
             $data['valid_uids'] = $this->iflychat_user_details['relationship_set'];

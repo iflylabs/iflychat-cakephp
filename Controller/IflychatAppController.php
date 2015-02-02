@@ -27,7 +27,9 @@
 //		'is_admin' => TRUE,
 //		'avatar_url' => '/path/to/my_picture.jpg',
 //		'upl' => 'link_to_profile_of_current_user.php',
-//        'relationship_set'=>$this->setRelationshipSet()
+//      'relationship_set'=>(boolean)$this->setRelationshipSet(),
+//      'user_roles'=>$this->(array)setUserRoles(array('1'=>'manager')),            //represents role of current user
+//      'all_user_roles'=>$this->(array)setAllUserRoles(array('12'=>'editor', '13'=>'super', '14'=>'etc'))   // represents all the roles exist
 //	    );
 	    /**
 	    *
@@ -40,16 +42,21 @@
 		'is_admin' => FALSE,
 		'avatar_url' => '',
 		'upl' => '',
-        'relationship_set' => $this->setRelationshipSet()
+        'relationship_set' =>(boolean)$this->setRelationshipSet(),
+        'user_roles'=>(array)$this->setUserRoles(),
+        'all_user_roles'=>(array)$this->setAllUserRoles()
 	    );
 	    return $user_details;
 	}
-        public function setRelationshipSet($relationship_set=FALSE) {
-            if(isset($relationship_set)){
-                //TODO
-            return array();
-            }
-        }
+    public function setRelationshipSet($relationship_set=FALSE) {
+        return $relationship_set;
+    }
+    public function setUserRoles($user_roles=array()) {
+        return $user_roles;
+    }
+    public function setAllUserRoles($all_user_roles=array()){
+        return $all_user_roles;
+    }
     }
 
 ?>
