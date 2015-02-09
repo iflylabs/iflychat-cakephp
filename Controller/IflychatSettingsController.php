@@ -13,7 +13,7 @@
     {
 	/**
 	*
-	* Components 
+	* Components
 	*
 	*/
 	public $components = array( 'RequestHandler', 'Session' );
@@ -55,7 +55,7 @@
 	* used to check whether a given string exists inside the second string with escaping of regexp characters.
 	* @param String $path the string to be checked.
 	* @param String $patterns the string in which given $path is to be searched.
-	* @return boolean $page_match true when 
+	* @return boolean $page_match true when
 	*
 	*/
 	private function iflychat_match_path($path, $patterns) {
@@ -78,7 +78,7 @@
 	* checks whether the incoming url is allowed or not.
 	* @param String $url url of the requesting page.
 	* @return boolean true when the incoming url is allowed.
-	* 
+	*
 	*/
 	private function iflychat_path_check($url) {
 	    $page_match = FALSE;
@@ -100,11 +100,23 @@
 	    return $page_match;
 	}
 
+    /*
+    * @function is_ssl
+    * checks protocol
+    * @returns true if https
+    *
+    * */
+    private function is_ssl(){
+
+        return ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']) || ( isset($request_headers['X-Forwarded-Proto']) && $request_headers['X-Forwarded-Proto'] == 'https' ))?TRUE:FALSE;
+
+    }
+
 	/**
 	*
 	* @function iflychat_check_chat_admin
 	* checks iflychat admin
-	* @return boolean true when 
+	* @return boolean true when
 	*
 	*/
 	private function iflychat_check_chat_admin() {
@@ -133,7 +145,7 @@
 	* converts predefined html characters to html entities including single and double quotes in UTF-8 character-set
 	* @param String $text the text to be converted
 	* @return String converted string.
-	* 
+	*
 	*/
 	private function iflychat_check_plain($text) {
 	    return htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
@@ -145,7 +157,7 @@
 	* returns the current session string for the guest.
 	* @param String $id current guest user id.
 	* @return String md5 hash of part of api key and guest id.
-	* 
+	*
 	*/
 	private function iflychat_compute_guest_session($id) {
 	    return md5(substr($this->iflychat_settings['Iflychat_external_api_key'],0,5) . $id);
@@ -156,7 +168,7 @@
 	* @function iflychat_get_random_name
 	* returns a random guest name.
 	* @return String random generated guest name.
-	* 
+	*
 	*/
 	private function iflychat_get_random_name() {
 	    $path = Router::url('/', true) . 'iflychat/' . "guest_names/iflychat_guest_random_names.txt";
@@ -171,7 +183,7 @@
 	* generates the current guest name using some random string if no cookie exist otherwise assigns the same previous name using cookies.
 	* assigns a cookie for the generated name.
 	* @return String the name of the guest.
-	* 
+	*
 	*/
 	private function iflychat_get_current_guest_name() {
 	    if(isset($_SESSION) && isset($_SESSION['iflychat_guest_name'])) {
@@ -198,7 +210,7 @@
 	* generates the current guest id using some random string, if no cookie exist otherwise assigns the same previous id using cookies.
 	* assigns a cookie for the generated id.
 	* @return String generated guest id.
-	* 
+	*
 	*/
 	private function iflychat_get_current_guest_id() {
 	    if(isset($_SESSION) && isset($_SESSION['iflychat_guest_id'])) {
@@ -230,7 +242,7 @@
 	* @function iflychat_get_user_id
 	* returns the current user id if guest returns a random generated id
 	* @return String current user id.
-	* 
+	*
 	*/
 	private function iflychat_get_user_id() {
 	    if($this->iflychat_user_details['id']) {
@@ -247,7 +259,7 @@
 	* used to initialize iflychat controller.
 	* @param String $url the url of the requesting page.
 	* @return array of settings
-	* 
+	*
 	*/
 	private function iflychat_init($url) {
 	    if($this->iflychat_path_check($url) && (($this->iflychat_settings['Iflychat_only_loggedin'] == "2") || $this->iflychat_user_details['id']!=0)) {
@@ -292,7 +304,7 @@
 		}
 
 		if($iflychat_settings['polling_method'] == "3") {
-		    if ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']) || ( isset($request_headers['X-Forwarded-Proto']) && $request_headers['X-Forwarded-Proto'] == 'https' )) {
+		    if ($this->is_ssl()) {
 			$iflychat_settings['external_host'] = IFLYCHAT_EXTERNAL_A_HOST;
 			$iflychat_settings['external_port'] = IFLYCHAT_EXTERNAL_A_PORT;
 			$iflychat_settings['external_a_host'] = IFLYCHAT_EXTERNAL_A_HOST;
@@ -362,7 +374,7 @@
 	* @function iflychat_get_user_profile_url
 	* returns the profile link of the current user
 	* @return String current user profile link.
-	* 
+	*
 	*/
 	private function iflychat_get_user_profile_url() {
 	    if ($this->iflychat_user_details['id']) {
@@ -376,7 +388,7 @@
 	* @function iflychat_get_user_pic_url
 	* returns the url to the user's pic.
 	* @return String current user's pic url.
-	* 
+	*
 	*/
 	private function iflychat_get_user_pic_url() {
 	    $url = '';
@@ -600,11 +612,11 @@
 	* used for loading mobile version of the application.
 	*
 	*/
-	
+
 	public function mobileAuth() {
 	    $data = array('settings' => array());
 	    $data['settings']['authUrl'] = Router::url('/',true).'iflychat/iflychat_settings/auth';
-	    if ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']) || ( isset($request_headers['X-Forwarded-Proto']) && $request_headers['X-Forwarded-Proto'] == 'https' )) {
+	    if ($this->is_ssl()) {
 		$data['settings']['host'] = IFLYCHAT_EXTERNAL_A_HOST;
 		$data['settings']['port'] = IFLYCHAT_EXTERNAL_A_PORT;
 	    }
